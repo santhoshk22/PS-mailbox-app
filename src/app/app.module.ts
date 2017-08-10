@@ -6,12 +6,20 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { InboxComponent } from './inbox/inbox.component';
+import { OutboxComponent } from './outbox/outbox.component';
+import { ComposeComponent } from './compose/compose.component';
+import { SideComponent } from './side/side.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    LoginComponent
+    LoginComponent,
+    InboxComponent,
+    OutboxComponent,
+    ComposeComponent,
+    SideComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +33,18 @@ import { LoginComponent } from './login/login.component';
       {
         path:"login",
         component: LoginComponent
+      },
+      {
+        path:"inbox",
+        component: InboxComponent
+      },
+      {
+        path:"outbox",
+        component: OutboxComponent
+      },
+      {
+        path:"compose",
+        component: ComposeComponent
       },
     ])
   ],

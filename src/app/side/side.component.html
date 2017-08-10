@@ -1,0 +1,55 @@
+<html>
+<head>
+  <style>
+    header, footer {
+    padding: 1em;
+    color:white;
+    background-color: black;
+    text-align: center;
+  }
+    div.container {
+      width: 100%;
+      border: 1px solid gray;
+    }
+    div.container1 {
+
+      border: 1px solid gray;
+    }
+    nav {
+    float: left;
+    padding: 1em;
+
+    margin-top: 3%;
+
+  }
+  nav li{
+    margin: 10px 0;
+    border-bottom: 2px solid gray;
+  }
+
+  </style>
+</head>
+<div class="container">
+  <header>
+    <h1>MAIL  BOX
+    </h1>
+  </header>
+
+  <nav border="1px">
+    <ul style="list-style: none;">
+      <li >
+        <a routerLink="/inbox">Inbox</a>
+      </li>  <li>
+      <a routerLink="/outbox">Outbox</a>
+    </li>  <li>
+      <a routerLink="/compose">Compose</a>
+    </li>
+      <li>
+        <a routerLink="/inbox">Edit profile</a>
+      </li>
+    </ul>
+  </nav>
+  <footer>
+  </footer>
+</div>
+</html>
